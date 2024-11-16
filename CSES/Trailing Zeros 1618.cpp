@@ -7,11 +7,15 @@ void solution(){
 	ll n;
 	cin>>n;
 	
-	ll tens=n/10;
-	ll fives=n/5;
+	//yep i was correct it depens on the number of 5
 	
+	ll pof5=5;
+	ll ans=0;
 	
-	ll ans=tens+(fives-tens);
+	while(n>=pof5){
+		ans+=n/pof5;
+		pof5*=5;
+	}
 	cout<<ans<<endl;
 }
 
