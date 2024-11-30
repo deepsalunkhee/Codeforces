@@ -331,6 +331,9 @@ public class Main {
         // 0 0 0 0 0
         //accessing the elements
         System.out.println(list2.get(0).get(0));
+
+        //changing a value at a particular index
+        list2.get(0).set(0, 10);//changing the value at index 0,0 to 10
         
     }
 }
@@ -1044,6 +1047,201 @@ public class Main {
         pq2.add(5);
         while(!pq2.isEmpty()) {
             System.out.print(pq2.poll() + " ");
+        }
+    }
+}
+```
+
+### Stack in C++ and Stack in java
+
+#### C++ Stack
+```C++
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(5);
+    while(!s.empty()) {
+        cout << s.top() << " ";
+        s.pop();
+    }
+    return 0;
+}
+```
+
+- Functions related to Stack in c++
+```C++
+
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+    stack<int> s;
+    s.push(10);
+    s.push(20);
+    s.push(5);
+    //basic functions
+    cout << "Size of stack: " << s.size() << endl;
+    cout << "Top element of stack: " << s.top() << endl;
+    //some more Functions
+    s.push(15);
+    s.pop();
+    s.empty();
+    //sorting
+    while(!s.empty()) {
+        cout << s.top() << " ";
+        s.pop();
+    }
+    return 0;
+}
+```
+
+#### Java Stack
+```java
+
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack<>();
+        s.push(10);
+        s.push(20);
+        s.push(5);
+        while(!s.isEmpty()) {
+            System.out.print(s.peek() + " ");
+            s.pop();
+        }
+    }
+}
+```
+
+- Functions related to Stack in java
+```Java
+
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack<>();
+        s.push(10);
+        s.push(20);
+        s.push(5);
+        //basic functions
+        System.out.println("Size of stack: " + s.size());
+        System.out.println("Top element of stack: " + s.peek());
+        //some more Functions
+        s.push(15);
+        s.pop();
+        s.isEmpty();
+        //sorting
+        while(!s.isEmpty()) {
+            System.out.print(s.peek() + " ");
+            s.pop();
+        }
+    }
+}
+```
+
+### Queue in C++ and Queue in Java
+
+#### C++ Queue
+```C++
+
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(5);
+    while(!q.empty()) {
+        cout << q.front() << " ";
+        q.pop();
+    }
+    return 0;
+}
+```
+
+- Functions related to Queue in c++
+```C++
+
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+    queue<int> q;
+    q.push(10);
+    q.push(20);
+    q.push(5);
+    //basic functions
+    cout << "Size of queue: " << q.size() << endl;
+    cout << "Front element of queue: " << q.front() << endl;
+    cout << "Back element of queue: " << q.back() << endl;
+    //some more Functions
+    q.push(15);
+    q.pop();
+    q.empty();
+    //sorting
+    while(!q.empty()) {
+        cout << q.front() << " ";
+        q.pop();
+    }
+    return 0;
+}
+```
+
+#### Java Queue
+```Java
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    public static void main(String[] args) {
+        Queue<Integer> q = new LinkedList<>();
+        q.add(10);
+        q.add(20);
+        q.add(5);
+        while(!q.isEmpty()) {
+            System.out.print(q.peek() + " ");
+            q.poll();
+        }
+    }
+}
+```
+
+- Functions related to Queue in java
+```java
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+    public static void main(String[] args) {
+        Queue<Integer> q = new LinkedList<>();
+        q.add(10);
+        q.add(20);
+        q.add(5);
+        //basic functions
+        System.out.println("Size of queue: " + q.size());
+        System.out.println("Front element of queue: " + q.peek());
+        //some more Functions
+        q.add(15);
+        q.poll();
+        q.isEmpty();
+        //sorting
+        while(!q.isEmpty()) {
+            System.out.print(q.peek() + " ");
+            q.poll();
         }
     }
 }
