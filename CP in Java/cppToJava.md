@@ -161,6 +161,20 @@ int main() {
     cout << "Size of array: " << sizeof(arr) / sizeof(arr[0]) << endl;
     cout << "First element: " << arr[0] << endl;
     cout << "Last element: " << arr[4] << endl;
+    //accepting a 2d as array of char as input and printing it
+    char arr[5][5];
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+            cin >> arr[i][j];
+        }
+    }
+    for(int i = 0; i < 5; i++) {
+        for(int j = 0; j < 5; j++) {
+            cout << arr[i][j] << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
 ```
@@ -187,7 +201,34 @@ public class Main {
         //first element
         System.out.println("First element: " + arr[0]);
         //last element
-        System.out.println("Last element: " + arr[arr.length - 1]);  
+        System.out.println("Last element: " + arr[arr.length - 1]); 
+        //accepting a 2d as array of char as input and printing it 
+        char[][] arr = new char[5][5];
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 5; j++) {
+                arr[i][j] = sc.next().charAt(0);
+            }
+        }
+
+        for(int i = 0; i < 5; i++) {
+            for(int j = 0; j < 5; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+		#       Scanner sc=new Scanner(System.in);
+		# int n=sc.nextInt();
+		# int m=sc.nextInt();
+		# printInt(n);
+		# printInt(m);
+		#
+		# //the building
+		# char[][] bu=new char[n][m];
+		#
+		# for(int i=0;i<n;i++){
+		# 	 bu[i]=sc.next().toCharArray();
+		# }
                
     }
 }
@@ -1247,4 +1288,189 @@ public class Main {
 }
 ```
 
+### pair in C++ and Pair in java
 
+#### C++ pair
+```C++
+
+#include <iostream>
+#include <utility>
+using namespace std;
+
+int main() {
+    pair<int, int> p = {10, 20};
+    cout << p.first << " " << p.second << endl;
+    return 0;
+}
+```
+
+- Functions related to pair in c++
+```C++
+
+#include <iostream>
+#include <utility>
+using namespace std;
+
+int main() {
+    pair<int, int> p = {10, 20};
+    //basic functions
+    cout << "First element of pair: " << p.first << endl;
+    cout << "Second element of pair: " << p.second << endl;
+    //some more Functions
+    p = make_pair(20, 30);
+    swap(p.first, p.second);
+    return 0;
+}
+```
+
+#### Java Pair
+```java
+
+import javafx.util.Pair;
+
+public class Main {
+    public static void main(String[] args) {
+        Pair<Integer, Integer> p = new Pair<>(10, 20);
+        System.out.println(p.getKey() + " " + p.getValue());
+    }
+}
+```
+
+- Functions related to Pair in java
+```java
+
+import javafx.util.Pair;
+
+public class Main {
+    public static void main(String[] args) {
+        Pair<Integer, Integer> p = new Pair<>(10, 20);
+        //basic functions
+        System.out.println("First element of pair: " + p.getKey());
+        System.out.println("Second element of pair: " + p.getValue());
+        //some more Functions
+        p = new Pair<>(20, 30);
+        p = new Pair<>(p.getValue(), p.getKey());
+    }
+}
+```
+
+### set in C++ and Set in java
+
+#### C++ set
+```C++
+
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    set<int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(5);
+    for(auto it = s.begin(); it != s.end(); it++) {
+        cout << *it << " ";
+    }
+    return 0;
+}
+```
+
+- Functions related to set in c++
+```C++
+
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main() {
+    set<int> s;
+    s.insert(10);
+    s.insert(20);
+    s.insert(5);
+    //basic functions
+    cout << "Size of set: " << s.size() << endl;
+    //some more Functions
+    s.insert(15);
+    s.erase(10);
+    s.clear();
+    //sorting
+    for(auto it = s.begin(); it != s.end(); it++) {
+        cout << *it << " ";
+    }
+    //custom comparator
+    set<int, greater<int>> s1;
+    s1.insert(10);
+    s1.insert(20);
+    s1.insert(5);
+    for(auto it = s1.begin(); it != s1.end(); it++) {
+        cout << *it << " ";
+    }
+    //cheking if a particular element is present in Set
+    auto it = s.find(10);
+    if(it != s.end()) {
+        cout << "Found" << endl;
+    } else {
+        cout << "Not Found" << endl;
+    }
+    return 0;
+}
+```
+
+#### Java Set
+```java
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<Integer> s = new HashSet<>();
+        s.add(10);
+        s.add(20);
+        s.add(5);
+        for(int i : s) {
+            System.out.print(i + " ");
+        }
+    }
+}
+```
+
+- Functions related to Set in java
+```java
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main {
+    public static void main(String[] args) {
+        Set<Integer> s = new HashSet<>();
+        s.add(10);
+        s.add(20);
+        s.add(5);
+        //basic functions
+        System.out.println("Size of set: " + s.size());
+        //some more Functions
+        s.add(15);
+        s.remove(10);
+        s.clear();
+        //sorting
+        for(int i : s) {
+            System.out.print(i + " ");
+        }
+        //custom comparator
+        Set<Integer> s1 = new TreeSet<>(Collections.reverseOrder());
+        s1.add(10);
+        s1.add(20);
+        s1.add(5);
+        for(int i : s1) {
+            System.out.print(i + " ");
+        }
+        //cheking if a particular element is present in set
+        if(s.contains(10)) {
+            System.out.println("Found");
+        } else {
+            System.out.println("Not Found");
+        }
+    }
+}
+```
