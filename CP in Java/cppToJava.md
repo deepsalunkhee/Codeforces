@@ -602,10 +602,112 @@ public class Main {
         int num = Integer.parseInt(s);
         //integer to strings    
         s = Integer.toString(num);
+        //give a string sentence which has words seperated by spaces convert it to a arrayList of words
+        String sentence="hello world";
+        String[] words=sentence.split(" ");
+
+        //comparing two strings
+        String s1="hello";
+        String s2="world";
+
+        if(s1.equals(s2)){
+            System.out.println("Equal");
+        }else{
+        
+            System.out.println("Not Equal");
+        }
+
+        //note: is java "==" is used to compare the references of the objects and not the values of the objects
+        //i.e if we have two strings s1 and s2 and we do s1==s2 then it will compare the references of the objects and not the values of the objects
+        //if we want to compare the values of the objects then we should use equals method
+
+
         
     }
 }
 ```
+
+#### java StringBuffer
+
+- what is this and why is this?
+- StringBuffer is a class in Java that is used to create mutable strings.
+- StringBuffer is used when we want to modify the string multiple times.
+
+```java
+
+public class Main {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello");
+        sb.append(" World");//append at the end
+        sb.insert(5, " ");//insert at index 5 
+        sb.delete(5, 6);//delete at index 5
+        sb.reverse();//reverse the string
+        System.out.println(sb);
+    }
+}
+```
+
+- Functions related to StringBuffer in java
+```java
+
+public class Main {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello");
+        //append at the end
+        sb.append(" World");
+        //insert at index 5 
+        sb.insert(5, " ");
+        //delete at index 5
+        sb.delete(5, 6);
+        //reverse the string
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+```
+
+#### StringBuilder in java 
+
+- what is this and why is this?
+- StringBuilder is a class in Java that is used to create mutable strings.
+- diff between StringBuffer and this is that StringBuffer is synchronized and StringBuilder is not synchronized.
+- StringBuilder is used when we want to modify the string multiple times and we don't need synchronization.
+
+```java
+
+public class Main {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append(" World");//append at the end
+        sb.insert(5, " ");//insert at index 5 
+        sb.delete(5, 6);//delete at index 5
+        sb.reverse();//reverse the string
+        System.out.println(sb);
+    }
+}
+```
+
+- Functions related to StringBuilder in java
+```java
+
+public class Main {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder("Hello");
+        //append at the end
+        sb.append(" World");
+        //insert at index 5 
+        sb.insert(5, " ");
+        //delete at index 5
+        sb.delete(5, 6);
+        //reverse the string
+        sb.reverse();
+        System.out.println(sb);
+    }
+}
+```
+
+
+
 
 ### Maps in C++ and HashMap in java
 
@@ -1474,3 +1576,444 @@ public class Main {
     }
 }
 ```
+
+### List in Java 
+
+- Diff between List and arrayList
+- List is an interface in Java that is implemented by ArrayList, LinkedList, Vector, and Stack.- List is used when you want to create a list of elements without specifying the implementation class.
+- ArrayList is used when you want to create an ArrayList of elements.   
+- ArrayList is a class in Java that is used to create an ArrayList of elements.
+- ArrayList is used when you want to create an ArrayList of elements.
+
+#### Java List
+```java
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(10);
+        list.add(20);
+        list.add(5);
+        for(int i : list) {
+            System.out.print(i + " ");
+        }
+    }
+}
+```
+
+- Functions related to List in java
+```java
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(10);
+        list.add(20);
+        list.add(5);
+        //basic functions
+        System.out.println("Size of list: " + list.size());
+        //some more Functions
+        list.add(15);
+        list.remove(10);
+        list.clear();
+        //sorting
+        Collections.sort(list);
+        //sorting in descending order
+        Collections.sort(list, Collections.reverseOrder());
+        //sort using comparator
+        Collections.sort(list, Collections.reverseOrder());
+        //custom comparator
+        Collections.sort(list, (a, b) -> b - a);
+        //reverse the list
+        Collections.reverse(list);
+        //creating a list of size 5 and all elements are 0
+        List<Integer> list1 = new ArrayList<>(Collections.nCopies(5, 0));
+        //creating a 2d list1
+        List<List<Integer>> list2 = new ArrayList<>();
+        for(int i = 0; i < 5; i++) {
+            list2.add(new ArrayList<>(Collections.nCopies(5, 0)));
+        }
+        // the list will look like this
+        // 0 0 0 0 0
+        // 0 0 0 0 0
+        // 0 0 0 0 0
+        // 0 0 0 0 0
+        // 0 0 0 0 0
+        //accessing the elements
+        System.out.println(list2.get(0).get(0));
+        //setting the elements
+        list2.get(0).set(0, 10);
+        System.out.println(list2.get(0).get(0));
+    }
+}
+```
+
+# Oops concepts in Java (these are random )
+
+## Question
+So, a class can be extended by a class, an interface can be implemented via an interface, and an interface can be implemented via a class. Correct?
+
+## Answer
+
+### 1. A Class Can Be Extended by Another Class
+- **Correct!** This is called **inheritance**.
+- A class can extend another class using the extends keyword.
+- The subclass inherits the properties and methods of the parent class.
+- Java supports **single inheritance**, so a class can extend only one parent class.
+
+**Example:**
+```java
+class Parent {
+    void display() {
+        System.out.println("This is the parent class.");
+    }
+}
+
+class Child extends Parent {
+    void show() {
+        System.out.println("This is the child class.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Child obj = new Child();
+        obj.display(); // Inherited from Parent
+        obj.show(); // Defined in Child
+    }
+}
+```
+
+### 2. An Interface Can Extend Another Interface
+- **Correct!** An interface can extend one or more other interfaces using the `extends` keyword.
+- This allows you to create more specialized interfaces by building on existing ones.
+- **Note:** Multiple inheritance is allowed with interfaces.
+
+**Example:**
+```java
+interface Animal {
+    void eat();
+}
+
+interface Mammal extends Animal {
+    void walk();
+}
+
+class Dog implements Mammal {
+    public void eat() {
+        System.out.println("Dog eats food.");
+    }
+    
+    public void walk() {
+        System.out.println("Dog walks on four legs.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.eat();
+        dog.walk();
+    }
+}
+```
+
+### 3. An Interface Can Be Implemented by a Class
+- **Correct!** This is called **implementation**.
+- A class can implement one or more interfaces using the `implements` keyword.
+- The class must provide concrete implementations for all abstract methods in the interface(s).
+
+**Example:**
+```java
+interface Vehicle {
+    void start();
+}
+
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car starts with a key.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle myCar = new Car();
+        myCar.start(); // Output: Car starts with a key.
+    }
+}
+```
+
+### 4. A Class Can Implement Multiple Interfaces
+- Java allows a class to implement multiple interfaces. This is one way to achieve **multiple inheritance** in Java.
+- The class must implement all abstract methods from all the interfaces.
+
+**Example:**
+```java
+interface Printable {
+    void print();
+}
+
+interface Showable {
+    void show();
+}
+
+class Document implements Printable, Showable {
+    public void print() {
+        System.out.println("Printing document...");
+    }
+
+    public void show() {
+        System.out.println("Showing document...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Document doc = new Document();
+        doc.print();
+        doc.show();
+    }
+}
+```
+
+### 5. A Class Cannot Extend an Interface
+- **Not allowed.** A class must use `implements` to adopt an interface's behavior.
+
+### 6. An Interface Cannot Implement Another Interface
+- **Not allowed.** An interface can only **extend** another interface.
+
+### Summary
+
+| Scenario | Allowed? | Keyword | Notes |
+|----------|----------|---------|-------|
+| Class extends Class | ✅ Yes | `extends` | Single inheritance is allowed. |
+| Interface extends Interface | ✅ Yes | `extends` | Multiple inheritance is allowed for interfaces. |
+| Class implements Interface | ✅ Yes | `implements` | A class must implement all methods from the interface. |
+| Interface implements Interface | ❌ No | - | Use `extends` instead. |
+| Class extends Interface | ❌ No | - | Not allowed; must use `implements`. |
+
+
+## Understanding List Interface and ArrayList Implementation in Java
+
+### Explanation
+
+When you write `List<Integer> temp = new ArrayList<>();`, you're demonstrating a key concept in Java's object-oriented and interface-based design:
+
+1. **Interface Declaration**: `List<Integer> temp`
+   - `List` is an interface that defines a contract for list-like data structures
+   - It specifies methods that any list implementation must provide (like `add()`, `remove()`, `get()`)
+   - Used as the reference type to provide flexibility
+
+2. **Concrete Implementation**: `new ArrayList<>()`
+   - `ArrayList` is a class that implements the `List` interface
+   - Provides actual implementation of the methods defined in the `List` interface
+   - Creates a concrete object that can be used as a list
+
+### Code Example
+
+```java
+// Using List interface with ArrayList implementation
+List<Integer> temp = new ArrayList<>();
+
+// Adding elements
+temp.add(10);
+temp.add(20);
+System.out.println(temp); // Output: [10, 20]
+
+// Switching implementation (demonstrating interface flexibility)
+temp = new LinkedList<>();
+temp.add(30);
+temp.add(40);
+System.out.println(temp); // Output: [30, 40]
+```
+
+### Key Concepts
+
+#### 1. Programming to an Interface
+- Declare variables using interface types
+- Create objects using specific implementation classes
+- Enables more flexible and maintainable code
+
+#### 2. Polymorphism
+- Can use different list implementations interchangeably
+- Code remains the same, only implementation changes
+
+#### Common List Implementations
+- `ArrayList`: Backed by a dynamic array
+- `LinkedList`: Implemented as a doubly-linked list
+- `Vector`: Similar to ArrayList, but synchronized
+
+### Benefits
+- **Flexibility**: Easy to change implementation
+- **Abstraction**: Hide implementation details
+- **Loose Coupling**: Depend on interfaces, not concrete classes
+
+### Interface vs Implementation
+
+| Aspect | Interface (`List`) | Implementation (`ArrayList`) |
+|--------|-------------------|-------------------------------|
+| Definition | Defines methods | Provides method implementations |
+| Role | Contract | Concrete functionality |
+| Instantiation | Cannot be instantiated | Can create objects |
+
+### Code Variations
+
+```java
+// Different ways to declare and initialize
+List<String> list1 = new ArrayList<>();  // Most common
+ArrayList<String> list2 = new ArrayList<>();  // Concrete type
+List<String> list3 = Collections.emptyList();  // Immutable empty list
+```
+
+### Best Practices
+- Prefer interface types in variable declarations
+- Choose implementation based on performance needs
+- Consider time and space complexity of different list types
+
+# Some random pieces of code that will teach you many things
+
+
+## Comprehensive Java Code Breakdown: Subordinates Counting Program
+
+### 1. Imports and Fundamental Setup
+```java
+import java.io.*;
+import java.util.*;
+```
+- `java.io.*`: Provides classes for input/output operations
+  - `BufferedReader`: Efficiently reads character input
+  - `BufferedWriter`: Efficiently writes character output
+- `java.util.*`: Contains utility classes like `List`, `ArrayList`, `Stack`, `Arrays`
+
+### 2. Class and Input/Output Setup
+```java
+class Main {
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+```
+#### Input/Output Components
+- `BufferedReader (br)`: 
+  - Reads input from the console
+  - More efficient than `Scanner`
+  - Can read entire lines of text
+- `BufferedWriter (bw)`: 
+  - Writes output to the console
+  - More efficient than `System.out.println()`
+  - Requires explicit flushing to display output
+
+### 3. Main Solution Method
+```java
+public static void solution() throws IOException {
+    // Method implementation
+}
+```
+- `throws IOException`: Handles potential input/output errors
+- Contains the core logic for solving the problem
+
+#### 3.1 Reading Number of Employees
+```java
+int n = Integer.parseInt(br.readLine());
+```
+- Reads the first line as a string
+- Converts string to integer using `Integer.parseInt()`
+- Represents total number of employees in the company
+
+#### 3.2 Creating Tree Structure
+```java
+List<List<Integer>> tree = new ArrayList<>();
+for (int i = 0; i < n + 1; i++) {
+    tree.add(new ArrayList<>());
+}
+```
+- Creates an adjacency list representation of the company hierarchy
+- Each index represents an employee
+- Nested lists allow tracking of each employee's direct subordinates
+- `n + 1` ensures indexing starts from 1 (not 0)
+
+#### 3.3 Building the Hierarchy
+```java
+String[] bosses = br.readLine().split(" ");
+for (int i = 2; i <= n; i++) {
+    int boss = Integer.parseInt(bosses[i - 2]);
+    tree.get(boss).add(i);
+}
+```
+- Reads boss information for each employee
+- `split(" ")`: Separates boss numbers by space
+- Builds the tree by adding subordinates to their respective boss's list
+- Uses `tree.get(boss).add(i)` to create hierarchy connections
+
+#### 3.4 Initializing Subordinates Count
+```java
+int[] subordinatesCount = new int[n + 1];
+Arrays.fill(subordinatesCount, -1);
+```
+- Creates an array to store subordinate counts
+- `Arrays.fill()`: Sets default value to -1 (uncomputed)
+- Allows tracking of each employee's total subordinates
+
+### 4. Subordinates Computation Method
+```java
+private static void computeSubordinatesIteratively(List<List<Integer>> tree, int[] subordinatesCount)
+```
+#### Core Algorithm: Iterative Depth-First Search (DFS)
+- Uses a stack for non-recursive tree traversal
+- Performs post-order traversal to count subordinates
+- Key steps:
+  1. Push initial node to stack
+  2. Visit unvisited nodes
+  3. Add subordinates to stack
+  4. Compute subordinate counts when backtracking
+
+#### Algorithm Implementation Details
+```java
+Stack<Integer> stack = new Stack<>();
+boolean[] visited = new boolean[n + 1];
+int[] tempCount = new int[n + 1];
+```
+- `stack`: Manages nodes to be processed
+- `visited`: Tracks processed nodes
+- `tempCount`: Temporarily stores subordinate counts
+
+#### Traversal Logic
+- First pass: Mark nodes and push to stack
+- Second pass: Compute subordinate count
+  - Count direct subordinates
+  - Add subordinates of subordinates
+
+### 5. Main Method Execution
+```java
+public static void main(String[] args) throws IOException {
+    solution();
+}
+```
+- Entry point of the program
+- Calls the `solution()` method to process and solve the problem
+
+### Key Concepts Demonstrated
+1. Tree Representation
+2. Iterative Depth-First Search
+3. Post-order Traversal
+4. Efficient I/O Handling
+5. Dynamic Counting Algorithm
+
+### Practical Use Case
+- Counting total subordinates in a company hierarchy
+- Efficient for large organizational structures
+- Demonstrates advanced Java programming techniques
+
+### Performance Characteristics
+- Time Complexity: O(n)
+- Space Complexity: O(n)
+- Efficient for large input sizes
+
+### Potential Improvements
+- Add error handling for invalid inputs
+- Implement recursive alternative
+- Add comments for complex logic sections
