@@ -229,7 +229,12 @@ public class Main {
 		# for(int i=0;i<n;i++){
 		# 	 bu[i]=sc.next().toCharArray();
 		# }
-               
+        //sort the arrys in java     
+        //note the arry must of the wrapper class ie Integer and not int and so on 
+        Arrays.sort(arr);
+        //sort the arrys in descending ordered
+        Arrays.sort(arr, Collections.reverseOrder());
+    
     }
 }
 ```

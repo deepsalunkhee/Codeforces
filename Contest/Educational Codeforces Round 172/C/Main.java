@@ -2,7 +2,9 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Main{
+public class Main{
+	
+	static Scanner sc= new Scanner(System.in);
 	
 	private static void printInt(int a){
 		System.out.print(a);
@@ -30,12 +32,38 @@ class Main{
 	}
 	
 	public static void solution(){
+		int a=sc.nextInt();
+		
+		
+		Integer[] in=new Integer[a];
+		
+		
+		for(int i=0;i<a;i++){
+			in[i]=sc.nextInt();
+			}
+			
+			
+		
+		
+		printInt(ans);
+		ln();
+		
+		
+		
 		
 	}
 	
 	public static void main(String[] args){
 		
+		int t=sc.nextInt();
+		
+		
+		
+		while(t!=0){
 		solution();
+		t--;	
+		}
+		
 		
 	}
 }

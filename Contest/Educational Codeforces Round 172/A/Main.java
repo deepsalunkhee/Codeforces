@@ -2,7 +2,9 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-class Main{
+public class Main{
+	
+	static Scanner sc= new Scanner(System.in);
 	
 	private static void printInt(int a){
 		System.out.print(a);
@@ -30,12 +32,50 @@ class Main{
 	}
 	
 	public static void solution(){
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		
+		Integer[] in=new Integer[a];
+		
+		for(int i=0;i<a;i++)in[i]=sc.nextInt();
+		
+		Arrays.sort(in,Comparator.reverseOrder());
+		
+		int su=0;
+		
+		for(Integer x:in){
+			su+=x;
+			if(su==b){
+				printInt(0);
+				ln();
+				return;
+			}else if(su>b){
+				su-=x;
+				printInt(b-su);
+				ln();
+				return;
+			}
+		}
+		
+		printInt(b-su);
+		ln();
+		return;
+		
+		
 		
 	}
 	
 	public static void main(String[] args){
 		
+		int t=sc.nextInt();
+		
+		
+		
+		while(t!=0){
 		solution();
+		t--;	
+		}
+		
 		
 	}
 }
