@@ -667,6 +667,8 @@ public class Main {
         //reverse the string
         sb.reverse();
         System.out.println(sb);
+        //converting to string 
+        String s=sb.toString();
     }
 }
 ```
@@ -707,6 +709,8 @@ public class Main {
         //reverse the string
         sb.reverse();
         System.out.println(sb);
+        //converting to string 
+        String s=sb.toString();
     }
 }
 ```

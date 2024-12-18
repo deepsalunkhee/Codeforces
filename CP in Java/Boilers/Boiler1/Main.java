@@ -4,6 +4,8 @@ import java.io.*;
 
 class Main{
 	
+	static Scanner sc=new Scanner(System.in);
+	
 	private static void printInt(int a){
 		System.out.print(a);
 	}
