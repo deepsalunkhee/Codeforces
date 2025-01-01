@@ -626,7 +626,15 @@ public class Main {
         //i.e if we have two strings s1 and s2 and we do s1==s2 then it will compare the references of the objects and not the values of the objects
         //if we want to compare the values of the objects then we should use equals method
 
+        //comparing two string lexicographically
 
+        if(s1.compareTo(s2)>0){
+            System.out.println("s1 is greater than s2");
+        }else if(s1.compareTo(s2)<0){
+            System.out.println("s1 is less than s2");
+        }else{
+            System.out.println("s1 is equal to s2");
+        }
         
     }
 }
@@ -667,8 +675,6 @@ public class Main {
         //reverse the string
         sb.reverse();
         System.out.println(sb);
-        //converting to string 
-        String s=sb.toString();
     }
 }
 ```
@@ -709,8 +715,6 @@ public class Main {
         //reverse the string
         sb.reverse();
         System.out.println(sb);
-        //converting to string 
-        String s=sb.toString();
     }
 }
 ```
