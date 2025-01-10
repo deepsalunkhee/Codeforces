@@ -635,6 +635,40 @@ public class Main {
         }else{
             System.out.println("s1 is equal to s2");
         }
+
+        //to check is somestring is present in another strings
+        if(s1.contains("hello")){
+            System.out.println("hello is present in s1");
+        }else{
+            System.out.println("hello is not present in s1");
+        }
+
+        //to check if a string starts with& ends wiht particular string 
+
+        if(s1.startsWith("he")){
+            System.out.println("s1 starts with he");
+        }else{
+            System.out.println("s1 does not start with he");
+        }
+
+        if(s1.endsWith("lo")){
+            System.out.println("s1 ends with lo");
+        }else{
+            System.out.println("s1 does not end with lo");
+        }
+
+        //to replace a particular string with another strings
+        s1=s1.replace("hello","world");
+        System.out.println(s1);
+
+        //to remove the leading and trailing spaces
+        s1=s1.trim();
+        System.out.println(s1);
+
+        //to remoce a particular character from a strings
+        s1=s1.replace("h","");
+        System.out.println(s1);
+
         
     }
 }
