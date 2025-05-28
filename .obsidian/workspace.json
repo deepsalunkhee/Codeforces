@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Specific/Input Class comparisons.md",
+                "file": "Java Specific/Set Collection.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Input Class comparisons"
+              "title": "Set Collection"
             }
           }
         ]
@@ -170,19 +170,22 @@
   },
   "active": "33e98217112e2232",
   "lastOpenFiles": [
-    "Strivers CP Sheet/Implementation & Constructive/Presents_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/Anton_and_Polyhedrons_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/Anton_and_Polyhedrons_A.java.lElGOs",
-    "Strivers CP Sheet/Implementation & Constructive/Soft_Drinking_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/Soft_Drinking_A.java.sNSefE",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.vlshgd",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.ucdDtT",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.ksRwfQ",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.KdxUkU",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.oCKKbQ",
-    "Strivers CP Sheet/Implementation & Constructive/Beautiful_Matrix_A.java.ZOvDvW",
-    "Java Specific/Intro to collections framework.md",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.yFrglV",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.riJOga",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.PawPbH",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.oWkqbi",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.qbUVEb",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.RFIbrs",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.CVtCRY",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java",
+    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.NrWYXj",
+    "Strivers CP Sheet/Implementation & Constructive/Boy_or_Girl_A.java.cviSbO",
+    "Strivers CP Sheet/Implementation & Constructive/Boy_or_Girl_A.java.sCNLyX",
+    "Java Specific/Map Collection.md",
+    "Java Specific/Set Collection.md",
+    "Java Specific/ToString and back.md",
     "Java Specific/Input Class comparisons.md",
+    "Java Specific/Intro to collections framework.md",
     "Java Specific/Arrays in Java.md",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",

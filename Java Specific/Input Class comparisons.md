@@ -137,3 +137,8 @@ public class ReadArray {
 Let me know if you want an example for other types like `double[]`, `String[]`, or multidimensional arrays.
 `
 
+
+#### Taking a single string from a multi string line
+
+you need to use split
+
