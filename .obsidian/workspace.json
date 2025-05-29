@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Specific/Set Collection.md",
+                "file": "Java Specific/Collection list.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Set Collection"
+              "title": "Collection list"
             }
           }
         ]
@@ -170,11 +170,19 @@
   },
   "active": "33e98217112e2232",
   "lastOpenFiles": [
+    "Java Specific/Collection list.md",
+    "Java Specific/Arrays in Java.md",
+    "Java Specific/ToString and back.md",
+    "Java Specific/Mutable Strings.md",
+    "Java Specific/Intro to collections framework.md",
+    "Java Specific/Input Class comparisons.md",
+    "Java Specific/Collection Set.md",
+    "Java Specific/Collection Queue.md",
+    "Java Specific/Collection Map.md",
+    "Java Specific/Images/list Collection.md",
     "Strivers CP Sheet/Implementation & Constructive/Buttons_B.java",
     "Strivers CP Sheet/Implementation & Constructive/Buttons_B.java.DdQYUl",
-    "Java Specific/Mutable Strings.md",
     "Strivers CP Sheet/Implementation & Constructive/k-String_A.java",
-    "Java Specific/Set Collection.md",
     "Strivers CP Sheet/Implementation & Constructive/Boring_Apartments_A.java",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.yFrglV",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.riJOga",
@@ -182,12 +190,6 @@
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.oWkqbi",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.qbUVEb",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.RFIbrs",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.CVtCRY",
-    "Java Specific/Map Collection.md",
-    "Java Specific/ToString and back.md",
-    "Java Specific/Input Class comparisons.md",
-    "Java Specific/Intro to collections framework.md",
-    "Java Specific/Arrays in Java.md",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",
     "Engineering Phase/Topics.md",
