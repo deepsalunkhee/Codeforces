@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Specific/Collection list.md",
+                "file": "Java Specific/Collection Map.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Collection list"
+              "title": "Collection Map"
             }
           }
         ]
@@ -170,8 +170,12 @@
   },
   "active": "33e98217112e2232",
   "lastOpenFiles": [
-    "Java Specific/Collection list.md",
+    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.sOBKxe",
     "Java Specific/Arrays in Java.md",
+    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java",
+    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.AaYUpN",
+    "Strivers CP Sheet/Implementation & Constructive/Amr_and_Music_A.java.UBNBbJ",
+    "Java Specific/Collection list.md",
     "Java Specific/ToString and back.md",
     "Java Specific/Mutable Strings.md",
     "Java Specific/Intro to collections framework.md",
@@ -187,9 +191,6 @@
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.yFrglV",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.riJOga",
     "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.PawPbH",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.oWkqbi",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.qbUVEb",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.RFIbrs",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",
     "Engineering Phase/Topics.md",
