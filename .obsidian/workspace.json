@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Specific/Collection Map.md",
+                "file": "Java Specific/Intro to collections framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Collection Map"
+              "title": "Intro to collections framework"
             }
           }
         ]
@@ -170,27 +170,28 @@
   },
   "active": "33e98217112e2232",
   "lastOpenFiles": [
+    "Java Specific/Too Basic 😏.md",
+    "Strivers CP Sheet/Maths/Floor_Number_A.java",
+    "Strivers CP Sheet/Maths/Array_with_Odd_Sum_A.java",
+    "Strivers CP Sheet/Maths/Mahmoud_and_Ehab_and_the_even-odd_game_A.java.onomwj",
+    "Concepts & Templets/LCM and GCD.md",
+    "Boiler Templets/v1.java.bcFRox",
+    "Java Specific/Input Class comparisons.md",
+    "Boiler Templets/v2.java",
+    "Strivers CP Sheet/Maths/LCM_Problem_A.java.YhyjXh",
+    "Strivers CP Sheet/Maths/LCM_Problem_A.java.YZyrRu",
+    "Strivers CP Sheet/Maths/LCM_Problem_A.java.YVudGc",
+    "Java Specific/Collection Map.md",
     "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.sOBKxe",
     "Java Specific/Arrays in Java.md",
     "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.AaYUpN",
-    "Strivers CP Sheet/Implementation & Constructive/Amr_and_Music_A.java.UBNBbJ",
     "Java Specific/Collection list.md",
     "Java Specific/ToString and back.md",
     "Java Specific/Mutable Strings.md",
     "Java Specific/Intro to collections framework.md",
-    "Java Specific/Input Class comparisons.md",
     "Java Specific/Collection Set.md",
     "Java Specific/Collection Queue.md",
-    "Java Specific/Collection Map.md",
     "Java Specific/Images/list Collection.md",
-    "Strivers CP Sheet/Implementation & Constructive/Buttons_B.java",
-    "Strivers CP Sheet/Implementation & Constructive/Buttons_B.java.DdQYUl",
-    "Strivers CP Sheet/Implementation & Constructive/k-String_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/Boring_Apartments_A.java",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.yFrglV",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.riJOga",
-    "Strivers CP Sheet/Implementation & Constructive/C+=_A.java.PawPbH",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",
     "Engineering Phase/Topics.md",
