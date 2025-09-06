@@ -169,8 +169,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "815ee984061d4553",
+  "active": "33e98217112e2232",
   "lastOpenFiles": [
+    "githubKey.pub",
+    "githubKey",
     "4913",
     "Java Specific/Java Streams.md",
     "Java Specific/Collection Stack.md",
@@ -193,8 +195,6 @@
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YhyjXh",
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YZyrRu",
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YVudGc",
-    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.sOBKxe",
-    "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java",
     "Java Specific/Images/list Collection.md",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",
