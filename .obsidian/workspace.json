@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Specific/Intro to collections framework.md",
+                "file": "Java Specific/Collection Stack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Intro to collections framework"
+              "title": "Collection Stack"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -168,29 +169,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33e98217112e2232",
+  "active": "815ee984061d4553",
   "lastOpenFiles": [
+    "4913",
+    "Java Specific/Java Streams.md",
+    "Java Specific/Collection Stack.md",
+    "Java Specific/Arrays in Java.md",
+    "Java Specific/Collection Queue.md",
+    "Java Specific/Collection Map.md",
+    "Java Specific/Collection Set.md",
+    "Java Specific/Collection list.md",
+    "Java Specific/Mutable Strings.md",
+    "Java Specific/Intro to collections framework.md",
+    "Java Specific/Input Class comparisons.md",
+    "Concepts & Templets/LCM and GCD.md",
+    "Java Specific/ToString and back.md",
     "Java Specific/Too Basic 😏.md",
     "Strivers CP Sheet/Maths/Floor_Number_A.java",
     "Strivers CP Sheet/Maths/Array_with_Odd_Sum_A.java",
     "Strivers CP Sheet/Maths/Mahmoud_and_Ehab_and_the_even-odd_game_A.java.onomwj",
-    "Concepts & Templets/LCM and GCD.md",
     "Boiler Templets/v1.java.bcFRox",
-    "Java Specific/Input Class comparisons.md",
     "Boiler Templets/v2.java",
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YhyjXh",
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YZyrRu",
     "Strivers CP Sheet/Maths/LCM_Problem_A.java.YVudGc",
-    "Java Specific/Collection Map.md",
     "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java.sOBKxe",
-    "Java Specific/Arrays in Java.md",
     "Strivers CP Sheet/Implementation & Constructive/Shuffle_Hashing_A.java",
-    "Java Specific/Collection list.md",
-    "Java Specific/ToString and back.md",
-    "Java Specific/Mutable Strings.md",
-    "Java Specific/Intro to collections framework.md",
-    "Java Specific/Collection Set.md",
-    "Java Specific/Collection Queue.md",
     "Java Specific/Images/list Collection.md",
     "Java Specific/Images/Pasted image 20250527165433.png",
     "Engineering Phase/CP in Java/cppToJava.md",
